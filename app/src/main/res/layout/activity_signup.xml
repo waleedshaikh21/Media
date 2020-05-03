@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".Signup">
+
+    <ImageView
+        android:id="@+id/InstagramName"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/instaname" />
+
+    <TextView
+        android:id="@+id/SignupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/InstagramName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Sign Up without using data."
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/LoginGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/SignupTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/google_button"
+        android:drawableStart="@drawable/googleicon"
+        android:text="Sign Up With Google"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/OR"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/LoginGoogle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:text="OR"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/STV"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/OR"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Sign up with email or phone number"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="20dp"
+        android:text="Already have an account?"
+        android:textColor="@color/colorGrey"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/SignTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/Signup"
+        android:text="Sign In"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/progress_bar"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:visibility="invisible" />
+
+</RelativeLayout>

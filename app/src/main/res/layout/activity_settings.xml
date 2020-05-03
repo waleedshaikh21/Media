@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".Settings">
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/back"
+        android:background="@drawable/ic_arrow"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:id="@+id/InstagramName"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="25dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/instaname" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/insta_icon"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/InstagramName"/>
+
+    <TextView
+        android:id="@+id/SignupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/InstagramName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Logging Out."
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/LogOutGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/SignupTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/google_button"
+        android:drawableStart="@drawable/googleicon"
+        android:paddingEnd="30dp"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

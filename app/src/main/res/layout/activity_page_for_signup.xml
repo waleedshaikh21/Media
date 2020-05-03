@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".PageForSignup">
+
+    <ImageView
+        android:id="@+id/InstagramNameTV"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/instaname" />
+
+    <ImageView
+        android:id="@+id/avatarIV"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/InstagramNameTV"
+        android:layout_centerInParent="true"
+        android:src="@drawable/avatar_icon" />
+
+    <EditText
+        android:id="@+id/Uname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/avatarIV"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/textviewlogin"
+        android:hint="Enter your Username"
+        android:inputType="textEmailAddress"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Uname"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/textviewlogin"
+        android:hint="Enter your Email ID"
+        android:inputType="textEmailAddress"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Username"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/textviewlogin"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/Signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Password"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/loginbutton"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/SignupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="20dp"
+        android:text="Already have an account?"
+        android:textColor="@color/colorGrey"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/SignTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/SignupTextView"
+        android:text="Sign In"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/progress_bar"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:visibility="invisible" />
+
+</RelativeLayout>

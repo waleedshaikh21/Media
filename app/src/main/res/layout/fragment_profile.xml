@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccentDark"
+    tools:context="Fragments.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/InstagramName"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/instanameblack" />
+
+    <TextView
+        android:id="@+id/bar1"
+        android:layout_width="150dp"
+        android:layout_height="4dp"
+        android:layout_below="@id/InstagramName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorDarkGrey" />
+
+    <TextView
+        android:id="@+id/bar2"
+        android:layout_width="150dp"
+        android:layout_height="4dp"
+        android:layout_below="@id/InstagramName"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorDarkGrey" />
+
+    <TextView
+        android:id="@+id/OR"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/InstagramName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="Welcome"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/header_profileIV"
+        android:layout_width="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/bar1"
+        android:layout_centerInParent="true"
+        android:src="@drawable/avatar_icon" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_profileIV"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mail"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
